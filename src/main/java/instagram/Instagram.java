@@ -8,6 +8,6 @@ public class Instagram {
     }
 
     public String createTimeAgoString(int minutes) {
-        return minutes + " mamutes ago.";
+        return minutes + " minutes ago.";
     }
 }

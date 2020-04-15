@@ -1,8 +1,7 @@
 package hello;
 
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class HelloWorldTest {
 
@@ -13,7 +12,7 @@ public class HelloWorldTest {
         //when
         String stringToTest = helloWorld.getGreeting();
         //then
-        assertEquals("Hello World!", stringToTest);
+        Assert.assertEquals("Hello World!", stringToTest);
     }
 
 }

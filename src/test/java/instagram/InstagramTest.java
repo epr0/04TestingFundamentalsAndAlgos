@@ -1,15 +1,14 @@
 package instagram;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class InstagramTest {
+public class InstagramTest {
 
     Instagram instagram = new Instagram();
 
     @Test
-    void createTimeAgoString() {
-        assertEquals("5 minutes ago.", instagram.createTimeAgoString(5));
+    public void createTimeAgoString() {
+        Assert.assertEquals("5 minutes ago.", instagram.createTimeAgoString(5));
     }
 }
