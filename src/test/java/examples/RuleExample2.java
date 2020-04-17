@@ -1,11 +1,8 @@
 package examples;
 
-import org.hamcrest.*;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
-import java.util.Random;
 
 public class RuleExample2 {
 

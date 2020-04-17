@@ -1,17 +1,16 @@
 package examples;
 
-import org.junit.Rule;
-import org.junit.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 
 public class Example7 {
 
@@ -43,6 +42,7 @@ public class Example7 {
                 .canRead()
                 .canWrite()
                 .hasContent("Java is cool");
+        assertThat(createdFolder).exists();
     }
 
     @Test

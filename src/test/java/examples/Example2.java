@@ -1,15 +1,14 @@
 package examples;
 
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 /*
 Test only for CALCULATOR and not ant other class in the there. So we need to isolate it and mock everything else.
