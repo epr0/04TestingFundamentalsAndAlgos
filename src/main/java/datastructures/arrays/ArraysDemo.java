@@ -1,5 +1,7 @@
 package datastructures.arrays;
 
+import java.util.Arrays;
+
 public class ArraysDemo {
 
 	public static void main(String[] args) {
@@ -10,11 +12,25 @@ public class ArraysDemo {
 		for (int i = 0; i < simpleArray.length; i++) {
 			System.out.print(simpleArray[i] + " ");
 		}
-		
-		int secondBiggestValue = findSecondLargestNumberInTheArray(simpleArray);
-		
 		System.out.println();
-		System.out.println("Second biggest value in the array is : " + secondBiggestValue);
+		System.out.println(Arrays.toString(simpleArray));
+		System.out.println();
+
+		Array numbers = new Array(3);
+		numbers.insert(10);
+		numbers.insert(500);
+		numbers.insert(55);
+		numbers.insert(56);
+		numbers.insert(57);
+		numbers.print();
+		System.out.println();
+		numbers.remove(1);
+		numbers.print();
+
+		
+		//int secondBiggestValue = findSecondLargestNumberInTheArray(simpleArray);
+		//System.out.println();
+		//System.out.println("Second biggest value in the array is : " + secondBiggestValue);
 	}
 
 	private static int findSecondLargestNumberInTheArray(int array[]) {
